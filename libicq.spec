@@ -2,9 +2,11 @@ Summary:	libicq library
 Summary(pl):	Biblioteka libicq
 Name:		libicq
 Version:	0.33
-Release:	3
+Release:	4
 License:	GPL
 Group:		Libraries
+Group(de):	Libraries
+Group(es):	Bibliotecas
 Group(fr):	Librairies
 Group(pl):	Biblioteki
 Source0:	%{name}-%{version}.tar.gz
@@ -23,6 +25,7 @@ plikacji komunikacji bazyuj±cej na priotokole ICQ.
 Summary:	Header files etc to develop libicq applications
 Summary(pl):	Pliki nag³ówkowe i inne do libicq
 Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name} = %{version}
@@ -38,6 +41,7 @@ tworzeniu aplikacji opartych o t± bibliotekê.
 Summary:	Static libicq libraries
 Summary(pl):	Biblioteka statyczna libicq
 Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name}-devel = %{version}
