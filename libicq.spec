@@ -2,7 +2,7 @@ Summary:	libicq library
 Summary(pl):	Biblioteka libicq
 Name:		libicq
 Version:	0.33
-Release:	6
+Release:	7
 License:	GPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/libicq/%{name}-%{version}.tar.gz
