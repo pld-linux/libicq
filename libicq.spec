@@ -11,10 +11,12 @@ Source:		%{name}-%{version}.tar.gz
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
-Libicq library needed by some ICQ clients
+libicq is based on micq and is intended to make it easy to add ICQ
+communication support to your software.
 
 %description -l pl
-Biblioteka u¿ywana przez niektóre programy ICQ
+libicq bazuje na ¼ród³ach micq i umo¿liwia ³atwe dodanie do ró¿nych plikacji
+komunikacji bazyuj±cej na priotokole ICQ.
 
 %package devel
 Summary:	Header files etc to develop libicq applications
@@ -47,7 +49,6 @@ Biblioteka statyczna libicq.
 %setup -q
 
 %build
-#automake
 LDFLAGS="-s"; export LDFLAGS
 %configure 
 make
