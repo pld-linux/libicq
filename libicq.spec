@@ -52,7 +52,6 @@ Biblioteka statyczna libicq.
 %setup -q
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure 
 %{__make}
 
@@ -61,8 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-
-strip --strip-unneeded $RPM_BUILD_ROOT%{_libdir}/lib*.so.*.*
 
 gzip -9nf AUTHORS ChangeLog NEWS README TODO
 
