@@ -2,7 +2,7 @@ Summary:	libicq library
 Summary(pl):	Biblioteka libicq
 Name:		libicq
 Version:	0.33
-Release:	4
+Release:	5
 License:	GPL
 Group:		Libraries
 Group(de):	Libraries
@@ -56,6 +56,9 @@ Biblioteka statyczna libicq.
 %setup -q
 
 %build
+libtoolize --copy --force
+aclocal
+autoconf
 %configure 
 %{__make}
 
