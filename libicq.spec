@@ -19,7 +19,7 @@ communication support to your software.
 
 %description -l pl
 libicq bazuje na ¼ród³ach micq i umo¿liwia ³atwe dodanie do ró¿nych
-plikacji komunikacji bazyuj±cej na priotokole ICQ.
+aplikacji komunikacji bazuj±cej na protokole ICQ.
 
 %package devel
 Summary:	Header files etc to develop libicq applications
