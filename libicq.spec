@@ -30,7 +30,7 @@ Requires:	%{name} = %{version}
 Header files etc you can use to develop libicq applications.
 
 %description devel -l pl
-Pakiet ten zaziewra pliki nag³ówkowe i inne do libicq niezbêdne przy
+Pakiet ten zaziera pliki nag³ówkowe i inne do libicq niezbêdne przy
 tworzeniu aplikacji opartych o t± bibliotekê.
 
 %package static
