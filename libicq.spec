@@ -29,7 +29,7 @@ Requires:	%{name} = %{version}
 %description devel
 Header files etc you can use to develop libicq applications.
 
-%description -l pl devel
+%description devel -l pl
 Pakiet ten zaziewra pliki nag³ówkowe i inne do libicq niezbêdne przy
 tworzeniu aplikacji opartych o t± bibliotekê.
 
@@ -42,7 +42,7 @@ Requires:	%{name}-devel = %{version}
 %description static
 Static libicq libraries.
 
-%description -l pl static
+%description static -l pl
 Biblioteka statyczna libicq.
 
 %prep
@@ -52,7 +52,7 @@ Biblioteka statyczna libicq.
 libtoolize --copy --force
 aclocal
 autoconf
-%configure 
+%configure
 %{__make}
 
 %install
@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc {AUTHORS,ChangeLog,NEWS,README,TODO}.gz 
+%doc {AUTHORS,ChangeLog,NEWS,README,TODO}.gz
 %attr(755,root,root) %{_libdir}/lib*.so
 %attr(755,root,root) %{_libdir}/lib*.la
 %{_includedir}/*.h
