@@ -2,7 +2,7 @@ Summary:	libicq library
 Summary(pl):	Biblioteka libicq
 Name:		libicq
 Version:	0.33
-Release:	2
+Release:	3
 Copyright:	GPL
 Group:		Libraries
 Group(pl):	Biblioteki
@@ -74,6 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc {AUTHORS,ChangeLog,NEWS,README,TODO}.gz 
 %attr(755,root,root) %{_libdir}/lib*.so
 %attr(755,root,root) %{_libdir}/lib*.la
+%{_includedir}/*.h
 
 %files static
 %defattr(644,root,root,755)
