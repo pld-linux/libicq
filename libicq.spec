@@ -5,7 +5,7 @@ Version:	0.33
 Release:	6
 License:	GPL
 Group:		Libraries
-Source0:	ftp://ftp.sf.net/pub/sourceforge/libicq/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/libicq/%{name}-%{version}.tar.gz
 URL:		http://sourceforge.net/projects/libicq/
 BuildRequires:	autoconf
 BuildRequires:	automake
