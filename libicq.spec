@@ -8,7 +8,7 @@ Group:		Libraries
 Group(pl):	Biblioteki
 Source:		%{name}-%{version}.tar.gz
 #URL:		
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 libicq is based on micq and is intended to make it easy to add ICQ
