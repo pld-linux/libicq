@@ -3,10 +3,11 @@ Summary(pl):	Biblioteka libicq
 Name:		libicq
 Version:	0.33
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Libraries
+Group(fr):	Librairies
 Group(pl):	Biblioteki
-Source:		%{name}-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 #URL:		
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -15,13 +16,14 @@ libicq is based on micq and is intended to make it easy to add ICQ
 communication support to your software.
 
 %description -l pl
-libicq bazuje na ¼ród³ach micq i umo¿liwia ³atwe dodanie do ró¿nych plikacji
-komunikacji bazyuj±cej na priotokole ICQ.
+libicq bazuje na ¼ród³ach micq i umo¿liwia ³atwe dodanie do ró¿nych
+plikacji komunikacji bazyuj±cej na priotokole ICQ.
 
 %package devel
 Summary:	Header files etc to develop libicq applications
 Summary(pl):	Pliki nag³ówkowe i inne do libicq
 Group:		Development/Libraries
+Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name} = %{version}
 
@@ -36,6 +38,7 @@ tworzeniu aplikacji opartych o t± bibliotekê.
 Summary:	Static libicq libraries
 Summary(pl):	Biblioteka statyczna libicq
 Group:		Development/Libraries
+Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name}-devel = %{version}
 
@@ -55,7 +58,9 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT
+
+make install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 strip --strip-unneeded $RPM_BUILD_ROOT%{_libdir}/lib*.so.*.*
 
@@ -68,6 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 %postun -p /sbin/ldconfig
 
 %files
+%defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
 %files devel
