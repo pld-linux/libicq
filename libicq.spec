@@ -2,15 +2,13 @@ Summary:	libicq library
 Summary(pl):	Biblioteka libicq
 Name:		libicq
 Version:	0.33
-Release:	1
+Release:	2
 Copyright:	GPL
 Group:		Libraries
 Group(pl):	Biblioteki
 Source:		%{name}-%{version}.tar.gz
 #URL:		
 BuildRoot:	/tmp/%{name}-%{version}-root
-
-%define _prefix /usr/X11R6
 
 %description
 Libicq library needed by some ICQ clients
