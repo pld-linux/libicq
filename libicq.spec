@@ -6,6 +6,7 @@ Release:	6
 License:	GPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/libicq/%{name}-%{version}.tar.gz
+# Source0-md5:	3717d4b08dfdd9af9a57f5d17d04529d
 URL:		http://sourceforge.net/projects/libicq/
 BuildRequires:	autoconf
 BuildRequires:	automake
