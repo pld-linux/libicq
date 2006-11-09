@@ -25,7 +25,7 @@ aplikacji komunikacji bazuj±cej na protokole ICQ.
 Summary:	Header files etc to develop libicq applications
 Summary(pl):	Pliki nag³ówkowe i inne do libicq
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files etc you can use to develop libicq applications.
@@ -38,7 +38,7 @@ tworzeniu aplikacji opartych o tê bibliotekê.
 Summary:	Static libicq libraries
 Summary(pl):	Biblioteka statyczna libicq
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libicq libraries.
