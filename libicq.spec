@@ -1,5 +1,5 @@
 Summary:	libicq library
-Summary(pl):	Biblioteka libicq
+Summary(pl.UTF-8):   Biblioteka libicq
 Name:		libicq
 Version:	0.33
 Release:	7
@@ -17,33 +17,33 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 libicq is based on micq and is intended to make it easy to add ICQ
 communication support to your software.
 
-%description -l pl
-libicq bazuje na ¼ród³ach micq i umo¿liwia ³atwe dodanie do ró¿nych
-aplikacji komunikacji bazuj±cej na protokole ICQ.
+%description -l pl.UTF-8
+libicq bazuje na ÅºrÃ³dÅ‚ach micq i umoÅ¼liwia Å‚atwe dodanie do rÃ³Å¼nych
+aplikacji komunikacji bazujÄ…cej na protokole ICQ.
 
 %package devel
 Summary:	Header files etc to develop libicq applications
-Summary(pl):	Pliki nag³ówkowe i inne do libicq
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe i inne do libicq
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files etc you can use to develop libicq applications.
 
-%description devel -l pl
-Pakiet ten zawiera pliki nag³ówkowe i inne do libicq niezbêdne przy
-tworzeniu aplikacji opartych o tê bibliotekê.
+%description devel -l pl.UTF-8
+Pakiet ten zawiera pliki nagÅ‚Ã³wkowe i inne do libicq niezbÄ™dne przy
+tworzeniu aplikacji opartych o tÄ™ bibliotekÄ™.
 
 %package static
 Summary:	Static libicq libraries
-Summary(pl):	Biblioteka statyczna libicq
+Summary(pl.UTF-8):   Biblioteka statyczna libicq
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libicq libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka statyczna libicq.
 
 %prep
