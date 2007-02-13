@@ -1,5 +1,5 @@
 Summary:	libicq library
-Summary(pl.UTF-8):   Biblioteka libicq
+Summary(pl.UTF-8):	Biblioteka libicq
 Name:		libicq
 Version:	0.33
 Release:	7
@@ -23,7 +23,7 @@ aplikacji komunikacji bazującej na protokole ICQ.
 
 %package devel
 Summary:	Header files etc to develop libicq applications
-Summary(pl.UTF-8):   Pliki nagłówkowe i inne do libicq
+Summary(pl.UTF-8):	Pliki nagłówkowe i inne do libicq
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -36,7 +36,7 @@ tworzeniu aplikacji opartych o tę bibliotekę.
 
 %package static
 Summary:	Static libicq libraries
-Summary(pl.UTF-8):   Biblioteka statyczna libicq
+Summary(pl.UTF-8):	Biblioteka statyczna libicq
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
